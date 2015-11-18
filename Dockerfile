@@ -8,5 +8,7 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10 && \
 VOLUME ["/data/db"]
 WORKDIR /data
 CMD ["mongod"]
-EXPOSE 27017 # process
-EXPOSE 28017 # http
+# process
+EXPOSE 27017
+# http
+EXPOSE 28017
